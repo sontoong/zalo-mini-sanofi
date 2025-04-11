@@ -63,7 +63,7 @@ export const TopicFilter = () => {
           >
             <Form.Item name="time" noStyle>
               <Checkbox.Group>
-                <div className="flex flex-col gap-3">
+                <div className="flex w-full flex-col gap-3">
                   {options.map((option, index) => (
                     <React.Fragment key={index}>
                       <Checkbox
@@ -88,7 +88,7 @@ export const TopicFilter = () => {
               text={
                 <div className="text-base font-medium text-white">Xác nhận</div>
               }
-              className="bg-primary-gradient drop-shadow-greenBtn w-full"
+              className="drop-shadow-greenBtn w-full bg-primary-gradient"
               onClick={() => form.submit()}
             />
           </div>
