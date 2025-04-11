@@ -5,7 +5,15 @@ import { createRoot } from "react-dom/client";
 // Import tailwind styles
 import "./presentation/styles/tailwind.css";
 
+// Custom antd css
+import "./presentation/styles/antd.scss";
+
+// Font
+import "./presentation/styles/fonts.css";
+
 import "zmp-ui/zaui.css";
+
+import "./presentation/styles/Topbar.scss";
 
 // import "./";
 // import "./utils/rippleEffect.js";
