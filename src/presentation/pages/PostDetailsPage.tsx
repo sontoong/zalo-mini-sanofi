@@ -8,7 +8,7 @@ const PostDetails = () => {
     <Page className="relative flex flex-1 flex-col bg-white">
       <Header
         title="Tài liệu y khoa"
-        className="topbar no-border !bg-primary-gradient h-auto flex-none pl-4"
+        className="topbar no-border h-auto flex-none !bg-primary-gradient pl-4"
         backIcon={<ArrowLeftOutlined className="absolute inset-1" />}
         textColor="white"
       />

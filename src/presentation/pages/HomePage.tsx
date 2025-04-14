@@ -8,6 +8,7 @@ import {
   PostList,
 } from "../components/Homepage";
 import { Divider } from "antd";
+import { Footer } from "../components/common/footer";
 
 const HomePage: FC = () => {
   return (
@@ -45,6 +46,7 @@ const HomePage: FC = () => {
         </div>
         <PostList />
       </div>
+      <Footer />
     </Page>
   );
 };

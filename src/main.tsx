@@ -12,7 +12,8 @@ import { AnimationRoutes, App, Box, SnackbarProvider, ZMPRouter } from "zmp-ui";
 
 import { validateMessages } from "./presentation/constants/validate-messages";
 import HomePage from "./presentation/pages/HomePage";
-import PostDetails from "./presentation/pages/PostDetails";
+import PostDetailsPage from "./presentation/pages/PostDetailsPage";
+import EventPage from "./presentation/pages/EventPage";
 
 import "dayjs/locale/vi";
 import timezone from "dayjs/plugin/timezone";
@@ -29,7 +30,8 @@ const AppRoutes = () => {
   return (
     <AnimationRoutes>
       <Route path="/" element={<HomePage />}></Route>
-      <Route path="/post" element={<PostDetails />}></Route>
+      <Route path="/post" element={<PostDetailsPage />}></Route>
+      <Route path="/event" element={<EventPage />}></Route>
     </AnimationRoutes>
   );
 };

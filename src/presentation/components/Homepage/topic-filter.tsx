@@ -86,9 +86,11 @@ export const TopicFilter = () => {
           <div className="w-full px-4 pb-[24px]">
             <Button
               text={
-                <div className="text-base font-medium text-white">Xác nhận</div>
+                <div className="py-3 text-base font-medium text-white">
+                  Xác nhận
+                </div>
               }
-              className="drop-shadow-greenBtn w-full bg-primary-gradient"
+              className="w-full bg-primary-gradient"
               onClick={() => form.submit()}
             />
           </div>

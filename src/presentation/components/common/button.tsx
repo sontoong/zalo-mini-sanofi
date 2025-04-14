@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const Button: ButtonComponent = ({ text, className, ...rest }) => {
   return (
-    <button className={`flex-1 rounded px-2 py-3 ${className}`} {...rest}>
+    <button className={`flex-1 rounded ${className}`} {...rest}>
       {text}
     </button>
   );

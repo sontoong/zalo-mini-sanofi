@@ -89,7 +89,7 @@ export const TimeFiter = () => {
               text={
                 <div className="text-base font-medium text-white">Xác nhận</div>
               }
-              className="drop-shadow-greenBtn w-full bg-primary-gradient"
+              className="w-full bg-primary-gradient py-3"
               onClick={() => form.submit()}
             />
           </div>
