@@ -1,21 +1,20 @@
 import React, { FC, useState } from "react";
 import { createPortal } from "react-dom";
 import { Sheet } from "zmp-ui";
-import CloseIcon from "../../static/close-icon.svg";
 import ClockIcon from "../../static/clock-icon.svg";
-import ShareIcon from "../../static/share-icon.svg";
-import StarIcon from "../../static/star-icon.svg";
-import StarIconActive from "../../static/star-icon-active.svg";
-import PlayTvIcon from "../../static/play-tv-icon.svg";
-import { Button } from "../common/button";
+import CloseIcon from "../../static/close-icon.svg";
 import EventBanner from "../../static/event-banner.png";
-import { Calendar } from "./calendar";
+import PlayTvIcon from "../../static/play-tv-icon.svg";
+import ShareIcon from "../../static/share-icon.svg";
+import StarIconActive from "../../static/star-icon-active.svg";
+import StarIcon from "../../static/star-icon.svg";
+import { Button } from "../common/button";
 import { Tag } from "../common/tag";
-import { Card } from "antd";
-import { SpeakerCollapse } from "./speakers-collapse";
-import { Participate } from "./participate";
-import { FooterButtons } from "./event-popup-footer-buttons";
+import { Calendar } from "./calendar";
 import { EventDetails } from "./event-details";
+import { FooterButtons } from "./event-popup-footer-buttons";
+import { Participate } from "./participate";
+import { SpeakerCollapse } from "./speakers-collapse";
 
 const eventDone = true;
 
@@ -112,7 +111,7 @@ const EventPopup: FC<Props> = ({ children }) => {
                       <img src={PlayTvIcon} />
                     </div>
                   }
-                  className="bg-purple4 rounded-[4px] py-[10px]"
+                  className="rounded-[4px] bg-purple4 py-[10px]"
                 />
               ) : null}
             </div>

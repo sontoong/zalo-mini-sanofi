@@ -25,6 +25,22 @@
   border-color: #065710 !important;
 }
 
+.custom-select.ant-select {
+  .ant-select-selector {
+    .ant-select-selection-item {
+      font-weight: 500;
+    }
+  }
+}
+
+.custom-tabs.ant-tabs {
+  .ant-tabs-nav {
+    .ant-tabs-tab {
+      color: #6e876e;
+    }
+  }
+}
+
 @media (max-width: 648px) {
   .ant-picker-panels {
     position: relative;

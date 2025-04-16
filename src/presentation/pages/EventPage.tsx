@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Header, Page } from "zmp-ui";
 import { Footer } from "../components/common/footer";
 import { Button } from "../components/common/button";
-import { EventPopup } from "../components/EventPage";
+import { EventPopup, TabAllEvent } from "../components/EventPage";
+import { Segmented, SegmentedProps } from "antd";
+import { StarFilled } from "@ant-design/icons";
 
 const EventPage = () => {
+  const [currentTab, setCurrentTab] = useState<number>(1);
+
   return (
     <Page className="relative flex flex-1 flex-col bg-white">
       <Header
         title={
           (
-            <div className="pb-[40px] pr-[90px]">
+            <div className="pb-[10px] pr-[90px]">
               <div className="text-xl font-bold">Opella.</div>
               <div className="text-sm font-medium">Healthcare Connect Hub</div>
             </div>
@@ -21,11 +25,18 @@ const EventPage = () => {
         textColor="white"
       />
       <div className="flex-1 overflow-auto">
-        <div className="flex flex-col gap-5 px-4 pb-6 pt-5">
-          <EventPopup>
-            {({ open }) => <Button text="Open popup" onClick={open} />}
-          </EventPopup>
+        <div className="px-4 py-3">
+          <Segmented
+            options={tabOptions}
+            onChange={(value) => {
+              setCurrentTab(value);
+            }}
+            value={currentTab}
+            size="large"
+            block
+          />
         </div>
+        {tabs[currentTab]}
       </div>
       <Footer />
     </Page>
@@ -33,3 +44,14 @@ const EventPage = () => {
 };
 
 export default EventPage;
+
+const tabOptions: SegmentedProps<number>["options"] = [
+  { label: "Tất cả", value: 1 },
+  {
+    label: "Quan tâm",
+    value: 2,
+    icon: <StarFilled className="text-gray3" />,
+  },
+];
+
+const tabs = { 1: <TabAllEvent /> };

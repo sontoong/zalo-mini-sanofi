@@ -31,6 +31,7 @@ module.exports = {
         surface: "#F8FAF8",
         gray1: "#F4F6F4",
         gray2: "#DDE3DD",
+        gray3: "#BCC8BC",
         gray5: "#6E876E",
         gray6: "#536553",
         green1: "#ECFEEE",
