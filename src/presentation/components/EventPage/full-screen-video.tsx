@@ -4,11 +4,7 @@ import { Button } from "../common/button";
 import YouTube from "react-youtube";
 import ChevronLeft from "../../static/chevron-left.png";
 import ShareIcon from "../../static/share.png";
-
-type Props = {
-  onClose: () => void;
-  videoId: string;
-};
+import clsx from "clsx";
 
 export const FullScreenVideo: FC<Props> = ({ onClose, videoId }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -50,7 +46,12 @@ export const FullScreenVideo: FC<Props> = ({ onClose, videoId }) => {
   return (
     <>
       {createPortal(
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#313131] py-[16px]">
+        <div
+          className={clsx(
+            "fixed inset-0 z-50 flex items-center justify-center bg-[#313131] py-[16px]",
+            { "pointer-events-none": !videoId, invisible: !videoId },
+          )}
+        >
           <div ref={containerRef} className="relative h-full w-full">
             <div className="absolute bottom-0 left-0 top-0 flex flex-col justify-between py-5">
               {/* Share button */}
@@ -92,4 +93,9 @@ export const FullScreenVideo: FC<Props> = ({ onClose, videoId }) => {
       )}
     </>
   );
+};
+
+type Props = {
+  onClose: () => void;
+  videoId: string | null;
 };

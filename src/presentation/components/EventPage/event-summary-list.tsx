@@ -20,12 +20,10 @@ const EventSummaryList = () => {
           </React.Fragment>
         ))}
       </div>
-      {currentVideo ? (
-        <FullScreenVideo
-          onClose={onCloseFullscreenVideo}
-          videoId={currentVideo}
-        />
-      ) : null}
+      <FullScreenVideo
+        onClose={onCloseFullscreenVideo}
+        videoId={currentVideo}
+      />
     </>
   );
 };
