@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Header, Page } from "zmp-ui";
 import { Footer } from "../components/common/footer";
-import { Button } from "../components/common/button";
-import { EventPopup, TabAllEvent } from "../components/EventPage";
+import { TabAllEvent } from "../components/EventPage";
 import { Segmented, SegmentedProps } from "antd";
 import { StarFilled } from "@ant-design/icons";
+import TabFollowingEvent from "../components/EventPage/tab-following";
 
 const EventPage = () => {
   const [currentTab, setCurrentTab] = useState<number>(1);
@@ -54,4 +54,4 @@ const tabOptions: SegmentedProps<number>["options"] = [
   },
 ];
 
-const tabs = { 1: <TabAllEvent /> };
+const tabs = { 1: <TabAllEvent />, 2: <TabFollowingEvent /> };

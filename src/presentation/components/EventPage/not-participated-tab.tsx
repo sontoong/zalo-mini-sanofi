@@ -8,7 +8,7 @@ import DownArrowIcon from "../../static/arrow-down-icon.svg";
 
 export const NotParticipatedTab = () => {
   return (
-    <div className="flex flex-col gap-3 px-4">
+    <div className="flex flex-col gap-3 px-4 pb-4">
       <div className="flex flex-col gap-3">
         <div className="text-xl font-semibold">Hội thảo chưa đăng ký</div>
         <div className="flex justify-between">

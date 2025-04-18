@@ -26,9 +26,11 @@ module.exports = {
         card: "0px 2px 8px 0px #00000014",
         "footer-buttons": "0px -4px 24px 0px #00000014",
         avatar: " 0px 4.8px 8px 0px #89878733",
+        "participated-card": "0px 4px 24px 0px #0000001F",
       },
       colors: {
         surface: "#F8FAF8",
+        red4: "#EE2F2F",
         gray1: "#F4F6F4",
         gray2: "#DDE3DD",
         gray3: "#BCC8BC",

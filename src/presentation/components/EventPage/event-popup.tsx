@@ -11,10 +11,10 @@ import StarIcon from "../../static/star-icon.svg";
 import { Button } from "../common/button";
 import { Tag } from "../common/tag";
 import { Calendar } from "./calendar";
-import { EventDetails } from "./event-details";
+import { EventDetails } from "./event-popup-details";
 import { FooterButtons } from "./event-popup-footer-buttons";
-import { Participate } from "./participate";
-import { SpeakerCollapse } from "./speakers-collapse";
+import { Participate } from "./event-popup-participate";
+import { SpeakerCollapse } from "./event-popup-speakers-collapse";
 
 const eventDone = true;
 

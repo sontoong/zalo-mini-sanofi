@@ -1,10 +1,11 @@
+import { Divider } from "antd";
 import React, { FC, useState } from "react";
+
 import ThumbImage from "../../static/event-banner.png";
 import StarIconActive from "../../static/star-icon-active.svg";
 import StarIcon from "../../static/star-icon.svg";
 import { Button } from "../common/button";
 import EventPopup from "./event-popup";
-import { Divider } from "antd";
 
 const NotParticipatedList = () => {
   return (
